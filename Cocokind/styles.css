@@ -1,0 +1,319 @@
+@media screen and (max-width: 1200px) {
+  body {
+    padding: 0 8px;
+  }
+  .hero img {
+    border: 1px solid black;
+    border-radius: 10px;
+  }
+}
+/* ==================header==================== */
+.header-line {
+  height: 80px;
+  justify-content: space-between;
+}
+.brand,
+.menu-list,
+.header-icons {
+  width: auto;
+}
+.menu-list ul {
+  display: flex;
+  list-style-type: none;
+}
+.menu-list ul li {
+  padding: 8px;
+  cursor: pointer;
+}
+.menu-list ul li:hover {
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  transform: scale(1.05);
+}
+.menu-list ul li i {
+  font-size: 14px;
+  color: orangered;
+}
+.header-icons a i {
+  padding: 15px;
+  color: gray;
+  font-size: 20px;
+}
+i:hover {
+  transform: scale(1.2);
+}
+@media screen and (max-width: 991px) {
+  .header-icons {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menu-list {
+    font-size: 13px;
+  }
+  .menu-list ul li {
+    padding: 5px;
+  }
+}
+/* ===================hero============ */
+.hero img {
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+}
+/* ====================shoppin section============== */
+.shopping h2 {
+  text-align: center;
+  margin-top: 40px;
+}
+.shop-all {
+  all: unset;
+  color: black;
+  display: block;
+  text-align: center;
+  margin: 10px;
+  font-size: 18px;
+}
+.shop-all:hover {
+  cursor: pointer;
+  transform: scale(1.08);
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.svg-icons {
+  justify-content: space-between;
+}
+.bulb {
+  text-align: center;
+}
+.bulb img {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(214, 209, 209);
+  border-radius: 50%;
+}
+.bulb a {
+  font-size: 13px;
+  color: black;
+  display: block;
+  text-align: center;
+  margin-top: 5px;
+  text-decoration: none;
+}
+.bulb:hover img {
+  border: 1px solid black;
+  animation: round 3s linear;
+}
+.bulb:hover a {
+  text-decoration: underline;
+}
+@keyframes round {
+  0% {
+    transform: rotatey(0deg);
+  }
+  100% {
+    transform: rotatey(360deg);
+  }
+}
+/* =================product-section============== */
+.products {
+  justify-content: space-between;
+  margin-top: 30px;
+}
+.skin-products {
+  width: 280px;
+  text-align: center;
+  border: 1px solid black;
+  border-radius: 15px;
+  overflow: hidden;
+  margin: 10px auto;
+}
+.skin-products h2 {
+  margin-top: 30px;
+}
+.skin-products p {
+  margin-bottom: 30px;
+}
+.price {
+  display: flex;
+  background-color: rgb(8, 8, 8);
+  justify-content: space-between;
+  margin: 10px;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+}
+.price h5,
+span {
+  padding: 15px;
+}
+.price:hover {
+  background-color: #ffffff;
+  border: 1px solid black;
+  color: black;
+  transition: 0.8s;
+}
+/* =======================sub-section===================== */
+.sub-section {
+  border: 1px solid black;
+  border-radius: 10px;
+  margin-top: 50px;
+  text-align: center;
+  background-color: rgb(233, 229, 229);
+}
+.sub-section h1 {
+  margin: 20px;
+}
+.sub-img h5 {
+  font-size: 20px;
+}
+.sub-img .img-fluid {
+  width: 70px;
+}
+.sub-content {
+  justify-content: center;
+}
+@media screen and (max-width: 768px) {
+  .sub-img {
+    margin: 30px 0px;
+  }
+}
+/* ==================Texture section============= */
+.texture {
+  padding: 50px 0;
+  text-align: center;
+}
+.smooth {
+  justify-content: center;
+}
+.smooth-img {
+  height: 450px;
+}
+.smooth-content {
+  margin: 5px;
+  border: 1px solid black;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.smooth-content .desc {
+  font-size: 22px;
+  margin-top: 20px;
+  padding: 0 5px;
+}
+.smooth-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 40px 15px 10px 15px;
+  padding-left: 10px;
+  border-radius: 5px;
+  background-color: rgb(8, 8, 8);
+  color: #ffffff;
+  cursor: pointer;
+}
+.smooth-footer:hover {
+  background-color: #ffffff;
+  border: 1px solid black;
+  color: black;
+  transition: 0.8s;
+}
+
+/* ======================Quiz section=========== */
+
+.quiz-bg {
+  height: 500px;
+  background: url(images/quiz_bg_m.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  justify-content: right;
+}
+.quiz-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.quiz-content h1 {
+  font-size: 45px;
+  padding: 20px 0;
+}
+.quiz-content p {
+  font-size: 20px;
+}
+.quiz-content button {
+  all: unset;
+  margin: 20px;
+  background-color: black;
+  color: #ffffff;
+  padding: 10px 70px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.quiz-content button:hover {
+  background-color: #ffffff;
+  border: 1px solid black;
+  color: black;
+}
+/* ==================footer================== */
+footer {
+  background-color: lightblue;
+  padding: 50px 0;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+}
+.footer-content {
+  width: 700px;
+  text-align: center;
+}
+.footer-input p {
+  padding: 10px 0;
+  font-size: 20px;
+}
+.input {
+  display: flex;
+}
+.input .mail {
+  padding: 12px;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 3px 0 0 3px;
+  border: 1px solid black;
+}
+.sub {
+  padding: 12px 25px;
+  color: #ffffff;
+  background-color: black;
+  border-radius: 0 3px 3px 0;
+  cursor: pointer;
+}
+.footer-desc {
+  margin: 20px 10px;
+  justify-content: space-between;
+}
+.about ul,
+.info ul {
+  list-style-type: none;
+  padding: 5px;
+  cursor: pointer;
+}
+.about ul li:hover,
+.info ul li:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+.socials {
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+}
+.sub-footer h1 {
+  font-size: 45px;
+  margin: 15px;
+}
