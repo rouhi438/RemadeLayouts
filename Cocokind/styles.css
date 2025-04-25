@@ -49,10 +49,10 @@ i:hover {
 }
 @media screen and (max-width: 768px) {
   .menu-list {
-    font-size: 13px;
+    font-size: 11px;
   }
   .menu-list ul li {
-    padding: 5px;
+    padding: 4px;
   }
 }
 /* ===================hero============ */
