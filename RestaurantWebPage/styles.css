@@ -97,10 +97,19 @@ header {
 .drop:hover .down {
   display: block;
 }
-@media screen and (max-width: 1200px) {
-  .container,
-  .row {
-    padding: 0 15px;
+@media screen and (max-width: 576px) {
+  .contact-way {
+    font-size: 11px;
+  }
+  .menubar li {
+    font-size: 10px;
+    padding: 4px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .menubar li {
+    font-size: 12px;
+    padding: 5px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -112,12 +121,13 @@ header {
     width: 100%;
   }
 }
-@media screen and (max-width: 768px) {
-  .menubar li {
-    font-size: 12px;
-    padding: 5px;
+@media screen and (max-width: 1200px) {
+  .container,
+  .row {
+    padding: 0 15px;
   }
 }
+
 /* ========main section ============= */
 .hero {
   display: flex;
@@ -384,12 +394,16 @@ header {
 }
 .menu-bar ul li:hover {
   color: #cda45e;
+  text-decoration: underline;
+  text-underline-offset: 5px;
+  transform: scale(1.07);
 }
 .products {
   height: auto;
   margin-top: 40px;
 }
-.left-side-row {
+.left-side-row,
+.right-side-row {
   width: 50%;
   display: flex;
 }
@@ -402,9 +416,11 @@ header {
   border-radius: 50%;
 }
 .product-item {
+  width: 500px;
   display: flex;
   flex-direction: column;
 }
+
 .name-price {
   width: 500px;
   display: flex;
@@ -439,51 +455,38 @@ header {
   font-style: italic;
   color: #7e7d7b;
 }
-.right-side-row {
-  width: 50%;
-  display: flex;
-}
-@media screen and (max-width: 1200px) {
-  .name-price {
-    width: 350px;
+@media screen and (max-width: 576px) {
+  .name-price a,
+  .name-price span,
+  .product-elements {
+    font-size: 13px;
   }
-  .name-price a::after {
+  .menu-bar ul li {
+    font-size: 16px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .name-price {
     width: 180px;
   }
-}
-@media screen and (max-width: 991px) {
+  .name-price a::after {
+    width: 190px;
+  }
   .right-side-row,
   .left-side-row {
     width: 100%;
     margin: 10px;
   }
-  .name-price {
-    width: 650px;
-  }
-  .name-price a::after {
-    width: 480px;
-  }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1200px) {
   .name-price {
-    width: 440px;
-  }
-  .name-price a::after {
     width: 260px;
   }
-}
-@media screen and (max-width: 576px) {
-  .name-price {
-    width: 300px;
-  }
   .name-price a::after {
-    width: 130px;
-  }
-  .products {
-    margin-left: 0;
-    padding-left: 0;
+    width: 120px;
   }
 }
+
 /* ====================Special section============= */
 /* =============================================== */
 .specials-section {
