@@ -103,7 +103,10 @@ header {
   }
   .menubar li {
     font-size: 10px;
-    padding: 4px;
+    padding: 3px;
+  }
+  #arrow {
+    font-size: 8px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -465,10 +468,10 @@ header {
     font-size: 16px;
   }
   .name-price {
-    width: 250px;
+    width: 225px;
   }
   .name-price a::after {
-    width: 120px;
+    width: 115px;
   }
   .right-side-row,
   .left-side-row {
