@@ -455,7 +455,7 @@ header {
   font-style: italic;
   color: #7e7d7b;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 768px) {
   .name-price a,
   .name-price span,
   .product-elements {
@@ -464,13 +464,11 @@ header {
   .menu-bar ul li {
     font-size: 16px;
   }
-}
-@media screen and (max-width: 768px) {
   .name-price {
-    width: 180px;
+    width: 250px;
   }
   .name-price a::after {
-    width: 190px;
+    width: 120px;
   }
   .right-side-row,
   .left-side-row {
@@ -479,11 +477,10 @@ header {
   }
 }
 @media screen and (max-width: 1200px) {
-  .name-price {
-    width: 260px;
-  }
-  .name-price a::after {
-    width: 120px;
+  .right-side-row,
+  .left-side-row {
+    width: 50%;
+    margin: 10px;
   }
 }
 
@@ -1075,7 +1072,7 @@ footer {
   margin-bottom: 45px;
 }
 .letter p {
-  line-height: 20px;
+  line-height: 35px;
   color: #c5c0ad;
   margin-bottom: 15px;
 }
@@ -1127,6 +1124,9 @@ footer {
 @media screen and (max-width: 576px) {
   footer {
     padding: 0 5px;
+  }
+  .letter h3 {
+    margin-bottom: 20px;
   }
 }
 /* ================================Navbar======================= */
