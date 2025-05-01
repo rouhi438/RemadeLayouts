@@ -78,12 +78,14 @@ header {
 .down {
   display: none;
   position: absolute;
-  height: 200px;
+  right: 10px;
+  height: 220px;
   width: 120px;
   background-color: rgb(24, 23, 23);
   border-radius: 5px;
   padding: 10px;
   text-align: center;
+  margin-top: 5px;
 }
 .down a {
   display: block;
@@ -104,6 +106,14 @@ header {
   .menubar li {
     font-size: 10px;
     padding: 3px;
+  }
+  .down {
+    width: 100px;
+    height: 180px;
+    padding: 7px;
+  }
+  .down a {
+    font-size: 10px;
   }
   #arrow {
     font-size: 8px;
