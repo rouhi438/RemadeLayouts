@@ -32,6 +32,7 @@ li a {
 }
 li a:hover {
   color: #d9232d;
+  cursor: pointer;
 }
 div .btn_start {
   background-color: #d9232d;
